@@ -27,6 +27,8 @@ namespace GROBSI
             ResolutionSelector rs = new ResolutionSelector();
             if (rs.ShowDialog() == true)
             {
+                resolutionWidth = rs.Resolution.Width;
+                resolutionHeight = rs.Resolution.Height;
                 InitializeComponent();
             }
             else

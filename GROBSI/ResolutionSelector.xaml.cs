@@ -48,5 +48,10 @@ namespace GROBSI
             this.heightTextBox.Text = resolution[0];
             this.widthTextBox.Text = resolution[1];
         }
+
+        public Resolution Resolution
+        {
+            get { return new Resolution(int.Parse(this.heightTextBox.Text),int.Parse(this.widthTextBox.Text)); }
+        }
     }
 }

@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Resolution.cs" />
     <Compile Include="ResolutionSelector.xaml.cs">
       <DependentUpon>ResolutionSelector.xaml</DependentUpon>
     </Compile>
