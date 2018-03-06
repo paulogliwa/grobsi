@@ -20,9 +20,20 @@ namespace GROBSI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int resolutionWidth = 0;
+        private int resolutionHeight = 0;
         public MainWindow()
         {
-            InitializeComponent();
+            ResolutionSelector rs = new ResolutionSelector();
+            if (rs.ShowDialog() == true)
+            {
+                InitializeComponent();
+            }
+            else
+                this.Close();
+
+            tempLabelHeight.Content = resolutionHeight;
+            tempLabelWidth.Content = resolutionWidth;
         }
     }
 }

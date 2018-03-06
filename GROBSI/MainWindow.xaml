@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GROBSI"
         mc:Ignorable="d"
-        Title="Get Rid Of Big Small Images" Height="350" Width="525">
+        Title="Get Rid Of Big Small Images" Height="350" Width="625">
     <Grid>
-        
+        <Label x:Name="tempLabelHeight" Content="Label" HorizontalAlignment="Left" Margin="138,86,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label x:Name="tempLabelWidth" Content="Label" HorizontalAlignment="Left" Margin="138,60,0,0" VerticalAlignment="Top" Width="102"/>
+
     </Grid>
 </Window>
